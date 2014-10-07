@@ -9,7 +9,8 @@ class MessageSerialiser
         return json_encode(array(
             'class' => $workerClass,
             'args'  => $args,
-            'retry' => $retry
+            'retry' => $retry,
+            'jid' => uniqid()
         ));
     }
 }
