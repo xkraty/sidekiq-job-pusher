@@ -1,3 +1,41 @@
+Installation
+
+Can be installed by using composer
+
+```json
+{
+  "name": "xkraty/sidekiq-job-pusher",
+  "description": "PHP client to interface with Sidekiq",
+  "repositories": [
+  {
+    "type": "package",
+    "package": {
+      "name": "sidekiq-job-pusher/sidekiq-job-pusher",
+      "version": "master",
+      "source": {
+        "url": "https://github.com/xkraty/sidekiq-job-pusher.git",
+        "type": "git",
+        "reference": "master"
+      }
+    }
+  }
+  ],
+  "require": {
+    "sidekiq-job-pusher/sidekiq-job-pusher": "dev-master",
+    "predis/predis": "0.8.*@dev"
+    },
+    "autoload": {
+      "psr-0": {
+        "": "lib/"
+      }
+    },
+    "config": {
+      "bin-dir": "bin"
+    }
+  }
+```
+
+
 Basic usage:
 
 ```php
